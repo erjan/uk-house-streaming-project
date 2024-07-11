@@ -16,7 +16,7 @@ import json
 import requests
 
 TOPIC = 'company_house'
-
+interval = 10
 
 producer = KafkaProducer(
     bootstrap_servers='splendid-goshawk-5336-us1-kafka.upstash.io:9092',
@@ -138,8 +138,9 @@ if __name__ == '__main__':
                     # producer.produce(topic, key=json.dumps(message["company_number"]).encode('utf-8'), value=json.dumps(message).encode('utf-8')).add_callback(on_send_success).add_errback(on_send_error)
                     
                     try:
-                        logging.info('sending..')
-                        time.sleep(10)
+                        logging.info('sending every %d seconds...' % interval)
+                        logging.info(message)
+                        time.sleep(interval)
                         producer.send(topic, key=json.dumps(message["company_number"]).encode('utf-8'), value=json.dumps(message).encode('utf-8'))
                     except Exception as e:
                         logging.info(f"tried to send but failed: {e}")
