@@ -10,9 +10,9 @@ sources:
     tables:
       - name: company_house_core
       - name: company_house_stream
-  - name: development
+  - name: production
     database: uk-house-streaming # BigQuery project id
-    schema: dbt_company_house_proc # BigQuery data set
+    schema: prod # BigQuery data set
     tables:
       - name: company_house_core
       - name: get_last_timestamp    
