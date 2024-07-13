@@ -27,4 +27,24 @@ Docker producing data:
 
 ![Screenshot_87](https://github.com/user-attachments/assets/3328ca67-396f-416a-ad3b-793e86ec5bcc)
 
+
+Bigquery:
+
+![Screenshot_88](https://github.com/user-attachments/assets/b305e999-64ad-4f83-8f83-d8c42fab71c8)
+
+
+DBT:
+
+![Screenshot_89](https://github.com/user-attachments/assets/4155dc5f-dd25-432f-a78d-8d388e38289f)
+
+
+dbt jobs:
+
+![Screenshot_90](https://github.com/user-attachments/assets/4d28a508-be08-45f8-9525-b707cf0225be)
+
+dbt prod scheduled runs:
+
+![Screenshot_91](https://github.com/user-attachments/assets/ea313416-f7b7-4c7d-9e0f-52b912b7f88f)
+
+
 tech stack: dbt, docker, bigquery, ec2, kafka , python, mage
